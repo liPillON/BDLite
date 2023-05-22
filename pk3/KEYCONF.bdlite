@@ -1,0 +1,4 @@
+addkeysection "BDLite Actions" bd_menu_keys
+
+addmenukey "Kick" +altattack
+addmenukey "Throw Grenade" +zoom
