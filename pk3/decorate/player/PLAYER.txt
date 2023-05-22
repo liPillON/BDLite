@@ -13,7 +13,7 @@ ACTOR Doomer : PlayerPawn Replaces DoomPlayer
     Player.StartItem "BdMeleeAttacks"
     Player.StartItem "BdGrenades"
     Player.StartItem "RifleAmmo", 60
-    Player.StartItem "RifleAmmoLoaded", 31
+    Player.StartItem "RifleAmmoLoaded", 30
     Player.StartItem "ShotgunAmmoLoaded", 8
     Player.StartItem "PlasmaAmmoLoaded", 50
     Player.StartItem "RocketAmmoLoaded", 6

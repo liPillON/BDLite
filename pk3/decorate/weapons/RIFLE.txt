@@ -129,8 +129,8 @@ ACTOR BdRifle : BDLiteWeapon Replaces Pistol
 ACTOR RifleAmmoLoaded : Ammo
 {
    Inventory.Amount 0
-   Inventory.MaxAmount 31
+   Inventory.MaxAmount 30
    Ammo.BackpackAmount 0
-   Ammo.BackpackMaxAmount 31
+   Ammo.BackpackMaxAmount 30
    Inventory.Icon "RIFLA0"
 }
