@@ -116,10 +116,10 @@ ACTOR Big_Tree: BigTree
     deathheight 42
     PainChance "Blood", 255
     damagefactor "Explosive", 10.0
- damagefactor "BlueBlood", 0.0 damagefactor "GreenBlood", 0.0
-damagefactor "Plasma", 10.0 damagefactor "Burn", 5.0 damagefactor "Flames", 5.0
- damagefactor "Fire", 5.0
- damagefactor "Blood", 10.0
+    damagefactor "BlueBlood", 0.0 damagefactor "GreenBlood", 0.0
+    damagefactor "Plasma", 10.0 damagefactor "Burn", 5.0 damagefactor "Flames", 5.0
+    damagefactor "Fire", 5.0
+    damagefactor "Blood", 10.0
     +SOLID
     +SHOOTABLE
     +FORCEYBILLBOARD
