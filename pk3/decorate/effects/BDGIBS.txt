@@ -92,11 +92,16 @@ actor BdGib : BdBlood
         TNT1 A 0 NoDelay A_SpawnItem("BdBloodSpot", 0, 0, 0, 1)
         TNT1 A 0 A_SetUserVar("user_rotationspeed", random(30, 50))
         TNT1 A 0 A_SetUserVar("user_rotationspeed", user_rotationspeed * randompick(-1, 1))
+        TNT1 A 0 A_JumpIf(waterlevel >= 1, "Underwater")
         TNT1 A 0 A_Jump(256, "Fly")
+    Underwater:
+        TNT1 A 0
+        Stop
 		
     Lying:
         "----" A 1 A_JumpIf(GetCVar("bd_janitor") == 1, "Expiring") //If the janitor cvar is on, skip the infinite frame and go away after a random time instead
-        "----" A -1
+        "----" A 100
+        Loop
     Expiring:
         "----" A random(60, 600)
         TNT1 A 0 A_SpawnItemEx("CoolAndNewFlameTrailsLong", 0, 0, 0, 0, 0, 0)
