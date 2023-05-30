@@ -1,0 +1,14 @@
+//reference: https://github.com/Tekkish/AmmoInfo/blob/main/source/aiassign.txt
+//colors: https://zdoom.org/wiki/Print#Colors
+
+RifleAmmoLoaded, A.Rifle, u
+RifleAmmo, Bullets, u
+ShotgunAmmoLoaded, Shotgun, g
+Shell, Shells, g
+RocketAmmoLoaded, R.Launcher, k
+RocketAmmo, Rockets, k
+PlasmaAmmoLoaded, P.Rifle, d
+PlasmaAmmo, Cells, d
+FlakAmmo, Flak, l
+GrenadeAmmo, Grenades, l
+
