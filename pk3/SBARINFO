@@ -16,16 +16,17 @@ statusbar fullscreen, fullscreenoffsets // ZDoom HUD
 	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(GrenadeAmmo), -88, -11;
 
 	//ammo
-	drawimage ammoicon1, -14, -4, centerbottom;
-	drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow, -25, -20;
-
 	usesammo
 	{
 		//secondary ammo and inventory
 		usessecondaryammo
 		{
-			drawimage ammoicon2, -14, -22, centerbottom;
-			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo2, drawshadow, -25, -38;
+			//available
+			drawimage ammoicon2, -14, -4, centerbottom;
+			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo2, drawshadow, -25, -20;
+			//currently loaded
+			drawimage ammoicon1, -14, -22, centerbottom;
+			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow, -25, -38;
 			inventorybarnotvisible
 			{
 				drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, HUDFONT_DOOM, -14, -39, -26, -56, untranslated;
@@ -33,6 +34,9 @@ statusbar fullscreen, fullscreenoffsets // ZDoom HUD
 		}
 		else //no secondary ammo
 		{
+			//available
+			drawimage ammoicon1, -14, -4, centerbottom;
+			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow, -25, -20;
 			inventorybarnotvisible
 			{
 				drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, HUDFONT_DOOM, -14, -21, -26, -38, untranslated;
