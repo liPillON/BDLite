@@ -31,7 +31,7 @@ statusbar fullscreen, fullscreenoffsets // ZDoom HUD
 			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow(1,1), -25, -38;
 			inventorybarnotvisible
 			{
-				drawselectedinventory centerbottom, drawshadow(1,1), alwaysshowcounter, HUDFONT_DOOM, -14, -39, -26, -56, untranslated;
+				drawselectedinventory centerbottom, alwaysshowcounter, INDEXFONT_DOOM, -14, -48, -6, -52, untranslated;
 			}
 		}
 		else //no secondary ammo
@@ -41,7 +41,7 @@ statusbar fullscreen, fullscreenoffsets // ZDoom HUD
 			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow(1,1), -25, -20;
 			inventorybarnotvisible
 			{
-				drawselectedinventory centerbottom, drawshadow(1,1), alwaysshowcounter, HUDFONT_DOOM, -14, -21, -26, -38, untranslated;
+				drawselectedinventory centerbottom, alwaysshowcounter, INDEXFONT_DOOM, -14, -30, -6, -34, untranslated;
 			}
 		}
 	}
@@ -49,7 +49,7 @@ statusbar fullscreen, fullscreenoffsets // ZDoom HUD
 	{
 		inventorybarnotvisible
 		{
-			drawselectedinventory centerbottom, drawshadow(1,1), alwaysshowcounter, HUDFONT_DOOM, -14, -3, -26, -20, untranslated;
+			drawselectedinventory centerbottom, alwaysshowcounter, INDEXFONT_DOOM, -14, -4, -6, -8, untranslated;
 		}
 	}
 
