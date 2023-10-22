@@ -11,6 +11,10 @@ statusbar fullscreen, fullscreenoffsets // ZDoom HUD
 	drawimage armoricon, 20, -24, centerbottom;
 	drawnumber 2147483647, HUDFONT_DOOM, untranslated, armor, drawshadow, whennotzero, 82, -39;
 
+	//grenades
+	drawimage "GRNDA", -93, -3, centerbottom;
+	drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(GrenadeAmmo), -88, -11;
+
 	//ammo
 	drawimage ammoicon1, -14, -4, centerbottom;
 	drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow, -25, -20;
