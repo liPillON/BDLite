@@ -1,14 +1,31 @@
 //reference: https://github.com/Tekkish/AmmoInfo/blob/main/source/aiassign.txt
 //colors: https://zdoom.org/wiki/Print#Colors
 
-RifleAmmoLoaded, A.Rifle, u
-RifleAmmo, Bullets, u
-ShotgunAmmoLoaded, Shotgun, g
-Shell, Shells, g
-RocketAmmoLoaded, R.Launcher, k
-RocketAmmo, Rockets, k
-PlasmaAmmoLoaded, P.Rifle, d
-PlasmaAmmo, Cells, d
-FlakAmmo, Flak, l
-GrenadeAmmo, Grenades, l
+
+
+//BDLITE by DavidN /////////////////////////////////////////////////////////////
+class Doomer
+
+	//weapons: BdRifle, BdMinigun
+	//RifleAmmoLoaded, A.Rifle, u
+	RifleAmmo, Bullets, u
+
+	//weapons: BdShotgun, BdSuperShotgun
+	//ShotgunAmmoLoaded, Shotgun, g
+	Shell, Shells, g
+
+	//weapons: BdRocketLauncher
+	//RocketAmmoLoaded, R.Launcher, k
+	RocketAmmo, Rockets, k
+
+	//weapons: BdPlasmaGun, BdBFG
+	//PlasmaAmmoLoaded, P.Rifle, d
+	PlasmaAmmo, Cells, d
+
+	//weapons: FlakCannon
+	FlakAmmo, Flak, t
+
+	//weapons: BdGrenades
+	GrenadeAmmo, Grenades, y
+
 
