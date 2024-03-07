@@ -1,14 +1,14 @@
 AddOptionMenu "OptionsMenu"
 {
-  StaticText " "
-  Submenu "BdLite Options", "BdLiteMenu"
+	Submenu "bdLite Options", "bdLiteMenu"
 }
 
-OptionMenu "BdLiteMenu"
+OptionMenu "bdLiteMenu"
 {
-  Title "BdLite Options"
-
-  Option "Pain Effects", "bd_pain_effects", "YesNo"
-  Option "Gibs Fade", "bd_janitor", "YesNo"
-  Option "Spent Ammo Fades", "bd_janitor_ammo", "YesNo"
+	Title "bdLite Options"
+	StaticText "2024.03.07", Black
+	StaticText ""
+	Option "Pain Effects", "bd_pain_effects", "YesNo"
+	Option "Gibs Fade", "bd_janitor", "YesNo"
+	Option "Spent Ammo Fades", "bd_janitor_ammo", "YesNo"
 }
