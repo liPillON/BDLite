@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+statusbar inventoryfullscreen, fullscreenoffsets
+{
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+statusbar fullscreen, fullscreenoffsets
+{
+	//health
+	inInventory PowerStrength {
+		DrawImage "PSTRA0", 63, -12, center, 24, 16;
+	} else {
+		DrawImage "MEDIA0", 63, -12, center, 24, 16;
+	}
+	drawnumber 2147483647, HUDFONT_DOOM, untranslated, health, drawshadow(1,1), 46, -20;
+
+	//armor
+	drawimage armoricon, 63, -30, center, 26, 18;
+	drawnumber 2147483647, HUDFONT_DOOM, untranslated, armor, drawshadow(1,1), whennotzero, 46, -38;
+
+	//inventory
+	inventorybarnotvisible
+	{
+		drawselectedinventory center, alwaysshowcounter, INDEXFONT_DOOM, 0+center, -11, 2+center, -8, untranslated;
+	}
+
+	//grenades
+	inInventory GrenadeAmmo, 1 {
+		drawimage "GRNDA", -88, -13, center, 24, 18;
+		drawnumber 3, INDEXFONT_DOOM, untranslated, ammo(GrenadeAmmo), alignment(center), -86, -13;
+	}
+
+	//ammo
+	usesammo
+	{
+		//secondary ammo and inventory
+		usessecondaryammo
+		{
+			//loaded ammo
+			drawimage weaponicon, -13, -29, center, 24, 18;
+			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow(1,1), -26, -38;
+			//available ammo
+			drawimage ammoicon2, -13, -11, center, 24, 18;
+			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo2, drawshadow(1,1), -26, -20;
+		}
+		else //no secondary ammo
+		{
+			//available ammo
+			drawimage ammoicon1, -13, -11, center, 24, 18;
+			drawnumber 2147483647, HUDFONT_DOOM, untranslated, ammo1, drawshadow(1,1), -26, -20;
+		}
+	}
+	else // no ammo
+	{
+	}
+
+	gamemode deathmatch
+	{
+		drawnumber 2147483647, HUDFONT_DOOM, untranslated, frags, drawshadow(1,1), -3, 1;
+	}
+	else
+	{
+		// let's hope no mod ever uses 100 keys...
+		drawkeybar 100, vertical, auto, -13, 5;
+	}
+}
