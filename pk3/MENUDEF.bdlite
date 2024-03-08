@@ -11,6 +11,10 @@ OptionMenu "bdLiteMenu"
 	StaticText "Visual", Gold
 	Option "Pain Effects", "bd_pain_effects", "OnOff"
 	StaticText ""
+	StaticText "KeyBinds", Gold
+	Control "Kick", bdLiteKick
+	Control "Throw Grenade", bdLiteThrowGrenade
+	StaticText ""
 	StaticText "Performance", Gold
 	Option "Gibs Fade", "bd_janitor", "YesNo"
 	Option "Casings Fade", "bd_janitor_ammo", "YesNo"
