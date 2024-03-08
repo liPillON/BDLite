@@ -1,4 +1,10 @@
-addkeysection "BDLite Actions" bd_menu_keys
+addkeysection "bdLite Actions" bdLiteKeyBinds
 
-addmenukey "Kick" +altattack
-addmenukey "Throw Grenade" +zoom
+addmenukey "Kick" bdLiteKick
+alias bdLiteKick "+altattack; wait 1; -altattack"
+defaultbind F bdLiteKick
+
+addmenukey "Throw Grenade" bdLiteThrowGrenade
+alias bdLiteThrowGrenade "+zoom; wait 1; -zoom"
+defaultbind Mouse2 bdLiteThrowGrenade
+
