@@ -8,7 +8,10 @@ OptionMenu "bdLiteMenu"
 	Title "bdLite Options"
 	StaticText "2024.03.07", Black
 	StaticText ""
-	Option "Pain Effects", "bd_pain_effects", "YesNo"
+	StaticText "Visual", Gold
+	Option "Pain Effects", "bd_pain_effects", "OnOff"
+	StaticText ""
+	StaticText "Performance", Gold
 	Option "Gibs Fade", "bd_janitor", "YesNo"
-	Option "Spent Ammo Fades", "bd_janitor_ammo", "YesNo"
+	Option "Casings Fade", "bd_janitor_ammo", "YesNo"
 }
