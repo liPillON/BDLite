@@ -6,7 +6,7 @@ AddOptionMenu "OptionsMenu"
 OptionMenu "bdLiteMenu"
 {
 	Title "bdLite Options"
-	StaticText "2024.03.07", Black
+	StaticText "2024.03.08", Black
 	StaticText ""
 	StaticText "Visual", Gold
 	Option "Pain Effects", "bd_pain_effects", "OnOff"
