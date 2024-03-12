@@ -2,4 +2,4 @@ base DOOM;
 height 32;
 resolution 320,200;
 completeborder true;
-monospacefonts true, "0", center;
+monospacefonts true, "0", left;
